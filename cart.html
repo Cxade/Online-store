@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__main center">
+        <div class="header__left">
+          <a href="index.html"
+            ><img src="img/header_logo.png" alt="main logo"
+          /></a>
+          <a href="#"><img src="img/header_search.svg" alt="search" /></a>
+        </div>
+        <nav class="header__right">
+          <label for="header__check"
+            ><img src="img/header_menu.svg" alt="menu"
+          /></label>
+          <a href="#" class="header__right-profile"
+            ><img src="img/header_profile.svg" alt="profile"
+          /></a>
+          <a href="#" class="header__right-cart"
+            ><img src="img/header_cart.svg" alt="cart"
+          /></a>
+        </nav>
+        <input class="header__checkbox" id="header__check" type="checkbox" />
+        <div class="mobile-menu">
+          <div class="mobile-menu__link-site">
+            <a href="#" class="mobile-menu-profile"
+              ><img src="img/header_profile.svg" alt="profile"
+            /></a>
+            <a href="#" class="mobile-menu-cart"
+              ><img src="img/header_cart.svg" alt="cart"
+            /></a>
+          </div>
+          <h3 class="mobile-menu__heading">MENU</h3>
+          <div class="mobile-menu__box">
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">MAN</a>
+              <ul class="mobile-menu__list">
+                <li><a class="mobile-menu__link" href="#">Accessories</a></li>
+                <li><a class="mobile-menu__link" href="#">Bags</a></li>
+                <li><a class="mobile-menu__link" href="#">Denim</a></li>
+                <li><a class="mobile-menu__link" href="#">T-Shirts</a></li>
+              </ul>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">WOMAN</a>
+              <ul class="mobile-menu__list">
+                <li><a class="mobile-menu__link" href="#">Accessories</a></li>
+                <li><a class="mobile-menu__link" href="#">Bags</a></li>
+                <li><a class="mobile-menu__link" href="#">Denim</a></li>
+                <li><a class="mobile-menu__link" href="#">T-Shirts</a></li>
+              </ul>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">KIDS</a>
+              <ul class="mobile-menu__list">
+                <li><a class="mobile-menu__link" href="#">Accessories</a></li>
+                <li><a class="mobile-menu__link" href="#">Bags</a></li>
+                <li><a class="mobile-menu__link" href="#">Denim</a></li>
+                <li><a class="mobile-menu__link" href="#">T-Shirts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="head">
+      <div class="head__main head__cart center">
+        <h2 class="head__heading">SHOPPING CART</h2>
+      </div>
+    </section>
+    <section class="cart">
+      <div class="cart-main center">
+        <div class="cart__left">
+          <div class="cart__product">
+            <img
+              class="cart__product-img"
+              src="img/cart__product-img1.png"
+              alt="product in cart"
+            />
+            <div class="cart__product-content">
+              <h2 class="cart__product-content-title">MANGO PEOPLE T-SHIRT</h2>
+              <p class="cart__product-content-price">
+                Price:
+                <span class="cart__product-content-price-span">$300</span>
+              </p>
+              <p class="cart__product-content-color">Color: Red</p>
+              <p class="cart__product-content-size">Size: Xl</p>
+              <div class="cart__product-content-box">
+                <p class="cart__product-content-quantity-text">Quantity:</p>
+                <input
+                  class="cart__product-content-quantity"
+                  type="number"
+                  min="1"
+                  value="1"
+                />
+              </div>
+              <svg
+                class="cart__product-content-svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
+                  fill="#575757"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="cart__product">
+            <img
+              class="cart__product-img"
+              src="img/cart__product-img2.png"
+              alt="product in cart"
+            />
+            <div class="cart__product-content">
+              <h2 class="cart__product-content-title">MANGO PEOPLE T-SHIRT</h2>
+              <p class="cart__product-content-price">
+                Price:
+                <span class="cart__product-content-price-span">$300</span>
+              </p>
+              <p class="cart__product-content-color">Color: Red</p>
+              <p class="cart__product-content-size">Size: Xl</p>
+              <div class="cart__product-content-box">
+                <p class="cart__product-content-quantity-text">Quantity:</p>
+                <input
+                  class="cart__product-content-quantity"
+                  type="number"
+                  min="1"
+                  value="1"
+                />
+              </div>
+              <svg
+                class="cart__product-content-svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
+                  fill="#575757"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="cart__btns">
+            <input class="cart__btn" type="reset" value="CLEAR SHOPPING CART" />
+            <input class="cart__btn" type="submit" value="CONTINUE SHOPPING" />
+          </div>
+        </div>
+        <div class="cart__right">
+          <div class="cart__form-box">
+            <h2 class="cart__right-title">SHIPPING ADRESS</h2>
+            <form action="#" class="cart__right-form">
+              <input
+                class="cart__right-form-field"
+                type="text"
+                placeholder="Bangladesh"
+              />
+              <input
+                class="cart__right-form-field"
+                type="text"
+                placeholder="State"
+              />
+              <input
+                class="cart__right-form-field"
+                type="number"
+                placeholder="Postcode / Zip"
+              />
+              <input
+                class="cart__right-form-btn"
+                type="submit"
+                value="GET A QUOTE"
+              />
+            </form>
+          </div>
+          <div class="cart__right-price">
+            <p class="cart__right-price-subtitle">
+              SUB TOTAL <span class="cart__right-price-space"></span> $600
+            </p>
+            <h3 class="cart__right-price-title">
+              GRAND TOTAL<span class="cart__right-price-space"></span>
+              <span class="cart__right-price-title-span">$600</span>
+            </h3>
+            <div class="cart__right-price-line"></div>
+            <input
+              class="cart__right-price-btn"
+              type="submit"
+              value="PROCEED TO CHECKOUT"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__main center">
+        <div class="advantages__item">
+          <img
+            src="img/advantages_1.svg"
+            alt="advantages 1"
+            class="advantages-img"
+          />
+          <h3 class="advantages__heading">Free Delivery</h3>
+          <p class="advantages__text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img
+            src="img/advantages_2.svg"
+            alt="advantages 2"
+            class="advantages__img"
+          />
+          <h3 class="advantages__heading">Sales & discounts</h3>
+          <p class="advantages__text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img
+            src="img/advantages_3.svg"
+            alt="advantages 3"
+            class="advantages__img"
+          />
+          <h3 class="advantages__heading">Quality assurance</h3>
+          <p class="advantages__text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="communication">
+      <div class="communication__main center">
+        <img
+          class="communication__background"
+          src="img/communication_background.png"
+          alt="communication background"
+        />
+        <figure class="communication__left">
+          <img
+            class="communication__quote-img"
+            src="img/communication_quote.png"
+            alt="img to quote"
+          />
+          <figcaption>
+            <blockquote class="communication__quote">
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+              <span class="communication__quote-italic"
+                >a pulvinar purus condimentum</span
+              >“
+            </blockquote>
+          </figcaption>
+        </figure>
+        <div class="communication__right">
+          <h3 class="communication__heading">SUBSCRIBE</h3>
+          <p class="communication__text">FOR OUR NEWLETTER AND PROMOTION</p>
+          <form class="communication__form" action="#">
+            <input
+              class="communication__email"
+              id="id_email"
+              type="email"
+              placeholder="Enter Your Email"
+            />
+            <input class="communication__btn" type="submit" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__main center">
+        <p class="footer__legal">© 2021 Brand All Rights Reserved.</p>
+        <div class="footer__social-icons">
+          <a href="#" class="footer__social-icon-box"
+            ><img
+              src="img/icon_1_facebook.svg"
+              alt="facebook link"
+              class="footer__social-icon"
+          /></a>
+          <a href="#" class="footer__social-icon-box"
+            ><img
+              src="img/icon_2_instagram.svg"
+              alt="instagram link"
+              class="footer__social-icon"
+          /></a>
+          <a href="#" class="footer__social-icon-box"
+            ><img
+              src="img/icon_3_pinterest.svg"
+              alt="pinterest link"
+              class="footer__social-icon"
+          /></a>
+          <a href="#" class="footer__social-icon-box"
+            ><img
+              src="img/icon_4_twitter.svg"
+              alt="twitter link"
+              class="footer__social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

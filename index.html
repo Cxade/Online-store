@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__main center">
+        <div class="header__left">
+          <a href="index.html"
+            ><img src="img/header_logo.png" alt="main logo"
+          /></a>
+          <a href="#"><img src="img/header_search.svg" alt="search" /></a>
+        </div>
+        <nav class="header__right">
+          <label for="header__check"
+            ><img src="img/header_menu.svg" alt="menu" class="header__menu"
+          /></label>
+          <a href="#" class="header__right-profile"
+            ><img src="img/header_profile.svg" alt="profile"
+          /></a>
+          <a href="#" class="header__right-cart"
+            ><img src="img/header_cart.svg" alt="cart"
+          /></a>
+          <div class="header__cart">0</div>
+        </nav>
+        <input class="header__checkbox" id="header__check" type="checkbox" />
+        <div class="mobile-menu">
+          <div class="mobile-menu__link-site">
+            <a href="#" class="mobile-menu-profile"
+              ><img src="img/header_profile.svg" alt="profile"
+            /></a>
+            <a href="#" class="mobile-menu-cart"
+              ><img src="img/header_cart.svg" alt="cart"
+            /></a>
+          </div>
+          <h3 class="mobile-menu__heading">MENU</h3>
+          <div class="mobile-menu__box">
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">MAN</a>
+              <ul class="mobile-menu__list">
+                <li><a class="mobile-menu__link" href="#">Accessories</a></li>
+                <li><a class="mobile-menu__link" href="#">Bags</a></li>
+                <li><a class="mobile-menu__link" href="#">Denim</a></li>
+                <li><a class="mobile-menu__link" href="#">T-Shirts</a></li>
+              </ul>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">WOMAN</a>
+              <ul class="mobile-menu__list">
+                <li><a class="mobile-menu__link" href="#">Accessories</a></li>
+                <li><a class="mobile-menu__link" href="#">Bags</a></li>
+                <li><a class="mobile-menu__link" href="#">Denim</a></li>
+                <li><a class="mobile-menu__link" href="#">T-Shirts</a></li>
+              </ul>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">KIDS</a>
+              <ul class="mobile-menu__list">
+                <li><a class="mobile-menu__link" href="#">Accessories</a></li>
+                <li><a class="mobile-menu__link" href="#">Bags</a></li>
+                <li><a class="mobile-menu__link" href="#">Denim</a></li>
+                <li><a class="mobile-menu__link" href="#">T-Shirts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="promo">
+      <div class="promo__main promo-center">
+        <div class="promo__left">
+          <img src="img/promo_left.png" alt="promo photo" class="promo__img" />
+        </div>
+        <div class="promo__right">
+          <div class="promo__info">
+            <h1 class="promo__title">THE BRAND</h1>
+            <h2 class="promo__subtitle">
+              OF LUXERIOUS <span class="promo__text-color">FASHION</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sale">
+      <div class="sale__main center">
+        <a class="sale__item" href="#">
+          <img
+            src="img/sale_women.png"
+            alt="sale women"
+            class="sale__item-img"
+          />
+          <div class="sale__content">
+            <p class="sale__text">30% OFF</p>
+            <h3 class="sale__title">FOR WOMEN</h3>
+          </div>
+        </a>
+        <a class="sale__item" href="#">
+          <img src="img/sale_men.png" alt="sale men" class="sale__item-img" />
+          <div class="sale__content">
+            <p class="sale__text">HOT DEAL</p>
+            <h3 class="sale__title">FOR MEN</h3>
+          </div>
+        </a>
+        <a class="sale__item" href="#">
+          <img src="img/sale_kid.png" alt="sale kid" class="sale__item-img" />
+          <div class="sale__content">
+            <p class="sale__text">NEW ARRIVALS</p>
+            <h3 class="sale__title">FOR KIDS</h3>
+          </div>
+        </a>
+        <a class="sale__item sale__item-big" href="#">
+          <img
+            src="img/sale_big.png"
+            alt="sale big"
+            class="sale__item-img sale__item-img-big"
+          />
+          <div class="sale__content">
+            <p class="sale__text">LUXIROUS & TRENDY</p>
+            <h3 class="sale__title">ACCESORIES</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="products">
+      <div class="products__main center">
+        <h2 class="products__heading" id="anchor">Fetured Items</h2>
+        <p class="products__text">
+          Shop for items based on what we featured in this week
+        </p>
+        <div class="products__box"></div>
+        <div class="product__btn-flex">
+          <a href="#" class="product__btn">Browse All Product</a>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__main center">
+        <div class="advantages__item">
+          <img
+            src="img/advantages_1.svg"
+            alt="advantages 1"
+            class="advantages-img"
+          />
+          <h3 class="advantages__heading">Free Delivery</h3>
+          <p class="advantages__text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img
+            src="img/advantages_2.svg"
+            alt="advantages 2"
+            class="advantages__img"
+          />
+          <h3 class="advantages__heading">Sales & discounts</h3>
+          <p class="advantages__text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img
+            src="img/advantages_3.svg"
+            alt="advantages 3"
+            class="advantages__img"
+          />
+          <h3 class="advantages__heading">Quality assurance</h3>
+          <p class="advantages__text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="cart">
+      <div class="cart__main center">
+        <h2 class="cart__heading">Cart Items</h2>
+        <div class="cart__left"></div>
+      </div>
+    </div>
+    <section class="communication">
+      <div class="communication__main center">
+        <img
+          class="communication__background"
+          src="img/communication_background.png"
+          alt="communication background"
+        />
+        <figure class="communication__left">
+          <img
+            class="communication__quote-img"
+            src="img/communication_quote.png"
+            alt="img to quote"
+          />
+          <figcaption>
+            <blockquote class="communication__quote">
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+              <span class="communication__quote-italic"
+                >a pulvinar purus condimentum</span
+              >“
+            </blockquote>
+          </figcaption>
+        </figure>
+        <div class="communication__right">
+          <h3 class="communication__heading">SUBSCRIBE</h3>
+          <p class="communication__text">FOR OUR NEWLETTER AND PROMOTION</p>
+          <form class="communication__form" action="#">
+            <input
+              class="communication__email"
+              id="id_email"
+              type="email"
+              placeholder="Enter Your Email"
+            />
+            <input class="communication__btn" type="submit" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__main center">
+        <p class="footer__legal">© 2021 Brand All Rights Reserved.</p>
+        <div class="footer__social-icons">
+          <a href="#" class="footer__social-icon-box"
+            ><img
+              src="img/icon_1_facebook.svg"
+              alt="facebook link"
+              class="footer__social-icon"
+          /></a>
+          <a href="#" class="footer__social-icon-box"
+            ><img
+              src="img/icon_2_instagram.svg"
+              alt="instagram link"
+              class="footer__social-icon"
+          /></a>
+          <a href="#" class="footer__social-icon-box"
+            ><img
+              src="img/icon_3_pinterest.svg"
+              alt="pinterest link"
+              class="footer__social-icon"
+          /></a>
+          <a href="#" class="footer__social-icon-box"
+            ><img
+              src="img/icon_4_twitter.svg"
+              alt="twitter link"
+              class="footer__social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
